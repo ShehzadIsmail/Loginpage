@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="./dashboard.html">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <div class="header-upper">
+        <h1>Welcome User</h1>
+    </div>
+    <div class="add-btn">
+        <div class="field">
+            <input type="text" id="team-name" placeholder="Team Name" required>
+        </div>
+        <div class="field">
+            <label for="team-type"></label>
+
+            <select name="teams" id="team-type">
+                <option value="teamtype">Team Type</option>
+                <option value="business">Business</option>
+                <option value="webdev">Web Developer</option>
+                <option value="accountant">Accountant</option>
+                <option value="developer">Developer</option>
+            </select>
+        </div>
+        <div class="field">
+            <input type="emails" id="emails" placeholder="Enter Your members emails" required>
+        </div>
+        <div class="field-btn">
+            <div class="btn-layer"></div>
+            <input type="submit" onclick="register()" value="Add Team">
+        </div>
+        <div class="btn-logout">
+            <input type="button" onclick="logOut()" value="Logout">
+        </div>
+</body>
+
+</html>
